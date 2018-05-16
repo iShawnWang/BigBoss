@@ -1,0 +1,9 @@
+extends base.pug
+
+block content
+  div.paper
+    form(action='/send', method='post')
+      div
+        label(for='Msg') Msg:
+        input#msg(type='text', name='msg')
+      button(type='submit') Submit
